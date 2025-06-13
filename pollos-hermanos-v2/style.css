@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+  }
+  
+  header img {
+    width: 100px;
+    height: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 700;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #005fa3;
+  }
+  
+  main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .secao {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .secao p {
+    margin-bottom: 10px;
+  }
+  
+  .texto {
+    flex: 1 1 400px;
+  }
+  
+  .imagem {
+    flex: 1 1 400px;
+  }
+  
+  .imagem img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #0077cc;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  .franquias ul {
+    columns: 2;
+    list-style-type: square;
+    margin-top: 10px;
+  }
+  
+  footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #666;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  footer a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    color: #005fa3;
+  }
+  
+  .copy {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .secao {
+      flex-direction: column;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .franquias ul {
+      columns: 1;
+    }
+  }
+
+  .formulario-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .formulario label {
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .formulario input,
+  .formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .formulario button {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .formulario button:hover {
+    background-color: #005fa3;
+  }
+  
